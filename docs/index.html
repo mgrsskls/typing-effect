@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <script src="js/index.js" type="module"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 data-typing-effect>Hello you, I'm a typing effect!</h1>
+    <p data-typing-effect>
+      What I'm doing different compared to other typing effects is that I
+      reserve the space of the animated text. That way other elements on the
+      page don't jump when the text container changes its size while typing.<br />
+      And centered text is possible as well.<br />
+      As well as line-breaks. Even <strong>bold text</strong> or other tags.
+    </p>
+    <p data-typing-effect>
+      In this demo, multiple elements are animated after another.<br />You can
+      control the typing speed as well as the delay between two animated
+      elements.
+    </p>
+    <p data-typing-effect>
+      Every character gets wrapped in a <code>span</code>. When the animation is
+      done, the containers are removed and the initial state is restored. Some
+      fonts are rendered differently, when characters are wrapped in a tag,
+      especially when ligatures are turned on. Because of that, you might see an
+      unlovely effect where your text moves when the animation is done. To avoid
+      that you can disable restoring of the initial state.
+    </p>
+    <p data-typing-effect>
+      I return a <code>Promise</code>. So, when I'm done, you can do something
+      like:
+    </p>
+    <footer hidden>
+      <a href="https://mgrossklaus.de" target="_blank" rel="noopener"
+        >Michael Großklaus</a
+      >
+      &middot;
+      <a href="https://github.com/mgrsskls/typer" target="_blank" rel="noopener"
+        >github.com/mgrsskls/typer</a
+      >
+    </footer>
+  </body>
+</html>
