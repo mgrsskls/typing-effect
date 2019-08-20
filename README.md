@@ -11,7 +11,9 @@ When the animation is done, everything will be resetted and the wrappers are rem
 
 ## Installation
 
-`npm install typing-effect` or `yarn install typing-effect`
+`npm install typing-effect`
+or
+add [https://mgrsskls.github.io/typing-effect/typing-effect.js](https://mgrsskls.github.io/typing-effect/typing-effect.js) to your project if you don't want to use the ES6 module.
 
 ## Options
 
@@ -38,16 +40,16 @@ and add the `data-typing-effect` attribute to the elements you want to animate.
 `typing-effect` would still work without, but you might be able to see the animated text for a small moment before the animation starts.
 
 ```js
-import type from "typing-effect";
+import typingEffect from "typing-effect"; // when not using https://mgrsskls.github.io/typing-effect/typing-effect.js
 
 // a single element
-type(document.querySelector("[data-typing-effect]"));
+typingEffect(document.querySelector("[data-typing-effect]"));
 
 // multiple elements
-type(Array.from(document.querySelectorAll("[data-typing-effect]")));
+typingEffect(Array.from(document.querySelectorAll("[data-typing-effect]")));
 
 // passing options
-type(
+typingEffect(
   Array.from(document.querySelectorAll("[data-typing-effect]"), {
     speed: 50,
     delay: 50,
@@ -56,7 +58,7 @@ type(
 );
 
 // doing something when the animation is done:
-type(
+typingEffect(
   Array.from(document.querySelectorAll("[data-typing-effect]")).then(() =>
     doSomething()
   )

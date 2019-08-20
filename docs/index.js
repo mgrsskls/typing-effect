@@ -1,7 +1,7 @@
-import type from "../index.js";
+/* global typingEffect */
 
 document.addEventListener("DOMContentLoaded", () => {
-  type(Array.from(document.querySelectorAll("[data-typing-effect]")), {
+  typingEffect(Array.from(document.querySelectorAll("[data-typing-effect]")), {
     speed: 20,
     delay: 200,
     reset: false
