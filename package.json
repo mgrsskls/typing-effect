@@ -1,6 +1,6 @@
 {
   "name": "typing-effect",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Typing effect that prevents elements from jumping around when the text becomes multiline",
   "main": "dist/index.js",
   "scripts": {
