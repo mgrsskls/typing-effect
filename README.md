@@ -59,10 +59,8 @@ typingEffect(
 
 // doing something when the animation is done:
 typingEffect(
-  Array.from(document.querySelectorAll("[data-typing-effect]")).then(() =>
-    doSomething()
-  )
-);
+  Array.from(document.querySelectorAll("[data-typing-effect]"))
+).then(() => doSomething());
 ```
 
 _**NOTE**_: If the text moves a bit when the animation is done, you can use `{ reset: false }`.
